@@ -1,7 +1,7 @@
 # RepairRAG
 
 
-# RepairRAG
+
 Evidence-Grounded Repair Intelligence using Retrieval-Augmented Generation
 
 ## Project Overview
