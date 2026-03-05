@@ -132,5 +132,5 @@ Planned improvements include:
 ---
 
 ## Contributors
-- Asleesha Sanjana
-- Nilasha Varma
+- Aslesha Sanjana Kodavali
+- Sai Nilasha Varma Indukuri
