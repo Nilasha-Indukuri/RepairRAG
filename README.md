@@ -46,6 +46,25 @@ The main objectives of this project are:
 - Evaluate different retrieval and answer-generation strategies
 
 ---
+## Interface
+The RepairRAG interface is a clean, dark-themed dashboard designed for querying repair questions and viewing evidence-grounded answers.
+
+🔑 Key Features (Concise)
+Search Bar: Enter natural language repair queries
+Pipeline Display: Shows BM25 + Dense + Fusion + Re-ranking + LLM
+System Sidebar: Displays chunks, models, and system status
+Retrieval Slider: Adjusts number of retrieved results
+Suggested Queries: Quick-access example questions
+Abstention Mechanism: Avoids hallucinations when evidence is insufficient
+Sources Panel: Shows retrieved guides with links and snippets
+
+<img width="1024" height="580" alt="WhatsApp Image 2026-04-13 at 11 05 26 PM" src="https://github.com/user-attachments/assets/56c296cb-e139-40a0-865a-c8d3a93c3351" />
+
+<img width="1470" height="832" alt="Screenshot 2026-04-13 at 11 03 30 PM" src="https://github.com/user-attachments/assets/db9a0ade-5e9f-4b95-b25e-eaecfda970c3" />
+
+
+<img width="1470" height="832" alt="Screenshot 2026-04-13 at 11 03 35 PM" src="https://github.com/user-attachments/assets/1dc81a2f-b708-4cbe-90b2-1f082178efad" />
+<img width="1470" height="832" alt="Screenshot 2026-04-13 at 11 03 40 PM" src="https://github.com/user-attachments/assets/53b827cb-d9de-4493-bc95-02ff3ccf9ba9" />
 
 ## System Architecture
 
@@ -61,3 +80,4 @@ Relevant Repair Manual Chunks
 Language Model
       ↓
 Evidence-Grounded Answer
+
