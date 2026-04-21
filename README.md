@@ -1,25 +1,37 @@
 # RepairRAG
 
-
-
 Evidence-Grounded Repair Intelligence using Retrieval-Augmented Generation
 
+---
+
 ## Project Overview
-RepairRAG is a system designed to answer repair-related questions by retrieving relevant information from repair manuals and combining it with a language model to generate accurate and evidence-based responses. 
+RepairRAG is a system designed to answer repair-related questions by retrieving relevant information from repair manuals and combining the retrieved evidence with a language model to generate accurate, grounded, and reliable answers.
 
-The goal of the project is to reduce hallucinated answers from language models by grounding responses in real repair documentation such as iFixit manuals and repair guides.
+The main purpose of this project is to reduce hallucinations in language model outputs by making sure responses are based on real repair documentation such as iFixit guides and technical repair manuals.
 
-Instead of relying purely on a language model, RepairRAG retrieves relevant document chunks first and then generates answers based on that retrieved evidence.
+Instead of directly asking a language model for an answer, RepairRAG first retrieves the most relevant repair content and then uses that evidence to generate a final response.
+
+---
+
+## Demo Screenshot
+
+![RepairRAG Demo]("C:\Users\nilas\OneDrive\Desktop\1.png")
 
 ---
 
 ## Problem Statement
-Repair manuals and technical documentation contain valuable information, but finding the exact repair instructions can be difficult and time consuming. Traditional search methods often return long documents without clear answers.
+Repair manuals and technical documentation contain valuable repair information, but users often face several difficulties while using them:
+
+- Manuals are long and difficult to navigate
+- Traditional keyword search may return incomplete or irrelevant results
+- Users may struggle to locate exact repair steps quickly
+- Language models alone may generate hallucinated or unsupported answers
 
 RepairRAG addresses this problem by:
+
 - Retrieving the most relevant repair instructions
-- Providing concise answers
-- Grounding answers with supporting evidence
+- Providing concise and useful answers
+- Grounding all generated responses in real documentation
 
 ---
 
@@ -28,109 +40,23 @@ The main objectives of this project are:
 
 - Build a Retrieval-Augmented Generation (RAG) pipeline for repair documentation
 - Reduce hallucinations in generated responses
-- Retrieve repair instructions from technical documentation
-- Provide evidence-backed answers to repair questions
-- Evaluate different retrieval and model strategies
+- Retrieve accurate repair instructions from technical manuals
+- Provide evidence-backed answers to user questions
+- Evaluate different retrieval and answer-generation strategies
 
 ---
 
 ## System Architecture
 
-The system follows a typical RAG pipeline:
+The system follows a standard RAG pipeline:
 
-User Question  
-        ↓  
-Document Retrieval  
-        ↓  
-Relevant Repair Manual Chunks  
-        ↓  
-Language Model  
-        ↓  
+```text
+User Question
+      ↓
+Document Retrieval
+      ↓
+Relevant Repair Manual Chunks
+      ↓
+Language Model
+      ↓
 Evidence-Grounded Answer
-
-Key components include:
-- Document preprocessing
-- Chunking repair manuals
-- Retrieval mechanism
-- Language model generation
-- Evaluation of responses
-
----
-
-## Dataset
-The project uses repair documentation and manuals such as:
-
-- iFixit repair guides
-- Repair manuals and technical documentation
-
-Dataset processing includes:
-- Cleaning the text
-- Splitting documents into chunks
-- Preparing the data for retrieval
-
----
-
-## Methodology
-
-### 1. Data Preparation
-- Collect repair manuals
-- Clean and preprocess text
-- Split documents into meaningful chunks
-
-### 2. Retrieval
-Relevant document sections are retrieved using retrieval methods such as:
-- BM25 (keyword-based retrieval)
-- Dense embeddings (semantic search)
-- Hybrid retrieval
-
-### 3. Answer Generation
-A language model generates answers based on the retrieved document chunks.
-
-### 4. Evaluation
-The model is evaluated based on:
-- Answer accuracy
-- Retrieval relevance
-- Model reliability
-
----
-
-## Key Challenges
-Some challenges encountered during the project include:
-
-- Class imbalance in the dataset
-- Visually similar repair cases causing prediction confusion
-- Model confidence not always reflecting correctness
-- Need for more diverse training data
-
----
-
-## Current Progress
-- Exploratory Data Analysis (EDA) completed
-- Baseline model trained and evaluated
-- Dataset quality analyzed
-- Model behavior studied to understand prediction patterns
-
----
-
-## Future Work
-Planned improvements include:
-
-- Expanding dataset diversity
-- Improving retrieval accuracy
-- Testing different model architectures
-- Evaluating ensemble approaches
-- Improving overall system reliability
-
----
-
-## Technologies Used
-- Python
-- Machine Learning / Deep Learning models
-- Retrieval-Augmented Generation (RAG)
-- Data analysis and preprocessing tools
-
----
-
-## Contributors
-- Aslesha Sanjana Kodavali
-- Sai Nilasha Varma Indukuri
