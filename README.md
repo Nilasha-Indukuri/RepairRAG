@@ -15,7 +15,8 @@ Instead of directly asking a language model for an answer, RepairRAG first retri
 
 ## Demo Screenshot
 
-![RepairRAG Demo]("C:\Users\nilas\OneDrive\Desktop\1.png")
+<img width="1401" height="541" alt="image" src="https://github.com/user-attachments/assets/dd6f54fe-64bf-4449-8dbd-bfb9fc22dc44" />
+
 
 ---
 
